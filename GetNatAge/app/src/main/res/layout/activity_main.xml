@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/light_blue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleG"
+        android:textColor="@color/yellow"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:text="Gender"
+        android:layout_marginLeft="135dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/yellow"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleN"
+        android:textColor="@color/yellow"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:text="Nationalize"
+        android:layout_marginLeft="145dp"
+        android:visibility="gone"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleA"
+        android:textColor="@color/yellow"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:text="Age"
+        android:layout_marginLeft="180dp"
+        android:visibility="gone"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoG"
+        android:layout_below="@+id/titleG"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:text="Predict the gender of a person given their name"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/yellow"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoN"
+        android:layout_below="@+id/titleN"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:text="Predicting nationality from a name."
+        android:textSize="24dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/yellow"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoA"
+        android:layout_below="@+id/titleA"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:text="Predicting the age of a person given their name."
+        android:textSize="24dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/yellow"
+        />
+
+    <EditText
+        android:id="@+id/InputG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="20dp"
+        android:hint="Write your name"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textColor="@color/yellow"
+        android:textColorHint="@color/yellow"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/yellow"
+        />
+
+    <Button
+        android:id="@+id/requestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InputG"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:text="Request"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/genderTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/requestButton"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="70dp"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"
+        android:textSize="50dp"
+        android:visibility="gone"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/natTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/requestButton"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="70dp"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"
+        android:textSize="50dp"
+        android:visibility="gone"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/ageTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/requestButton"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="70dp"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"
+        android:textSize="50dp"
+        android:visibility="gone"
+        android:gravity="center"/>
+
+</RelativeLayout>
